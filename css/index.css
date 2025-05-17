@@ -1,0 +1,124 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-color: #000;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* 定义字体 */
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("/font/static/NotoSansJP-Light.ttf") format("truetype");
+}
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url("/images/bg1.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2;
+  color: #fff;
+  padding: 20px 0;
+  font-family: NotoSansJP;
+  max-width: 1000px;
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    background-size: 50% 120%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main {
+    width: 90%;
+  }
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.box-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: relative;
+}
+.box-container i {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.box-container::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.box-container::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+}
+.left {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.right {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+.img-show {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+.img-show  img {
+  width: 100%;
+}
+
+.box-container a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
