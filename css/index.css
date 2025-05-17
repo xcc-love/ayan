@@ -13,11 +13,11 @@ a {
 /* 定义字体 */
 @font-face {
   font-family: "NotoSansJP";
-  src: url("/font/static/NotoSansJP-Light.ttf") format("truetype");
+  src: url("../font/static/NotoSansJP-Light.ttf") format("truetype");
 }
 .main {
   background: linear-gradient(rgba(0, 0, 0, 0.5)),
-    url("/images/bg1.jpg") no-repeat center center fixed;
+    url("../images/bg1.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
   width: 80%;
   margin: 0 auto;
